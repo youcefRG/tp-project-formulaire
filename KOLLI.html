@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>homeworck HTM/CSS : formulaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="KOLLI.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h1> les formulaires HTML</h1>
+        
+        <form  method="POST"    action="traitment.php">
+            
+          <fieldset id="table1"> 
+                <legend>Information personnelles :</legend>
+                <div id="T1">
+                  <div class="la">
+                      <label for="prenom">Entrez votre prenom :</label>
+                  </div>
+                  <div id="in">
+                      <input type="text" name="prenom" id="prenom"> <br>  
+                  </div>
+              </div>
+              <div id="T1">
+                     <div class="la">
+                         <label for="nom">Entres votre nom :</label>
+                     </div>
+                     <div id="in">
+                         <input type="text" name="nom"  id="nom"><br>
+                     </div>
+              </div>
+              <div id="T1">
+                  <div class="la">
+                     <label for="mail">Choisissez un pseudo :</label>
+                  </div>
+                  <div id="in">
+                     <input type="email" name="mail" id="mail"><br>
+                  </div>
+              </div>
+          </fieldset>
+  
+         <fieldset id="table2">
+              <legend> Information supplementaires :</legend>
+              Hobbies <br>
+              <div id="in2">
+                  <input type="checkbox" name="hobbies" value="Informatique" id="info">
+                  <label for="info">Informatique</label>
+              </div>
+              <div id="in2">
+                  <input type="checkbox" name="hobbies" value="Sport" id="sport">
+                  <label for="Sport">Sport</label>
+              </div>
+              <div id="in2"> 
+                  <input type="checkbox" name="hobbies" value="Voyage" id="voyage">
+                  <label for="voyage"> Voyage</label>
+              </div>
+              <div id="in2">
+                  <input type="checkbox" name="hobbies" value="Musique" id="musique">
+                  <label for="musique">Musique</label>
+              </div>
+              <br>
+              <br>
+          </fieldset>    
+             <div id="contenu">
+                 <input type="submit" value="Envoyer" class="botton" >
+             </div>
+      </form>
+
+    </div>
+</body>
+</html>
